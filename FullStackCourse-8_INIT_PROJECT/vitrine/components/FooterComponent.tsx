@@ -1,7 +1,9 @@
 const FooterComponent: React.FC = () => {
   return (
     <footer>
-      <p>©Copyright 2050 par personne. Tous droits reversés.</p>
+      <p>Contact</p>
+      <p>Conditions Générales pdf</p>
+      <p>Ride 2022. Tous droits reversés.</p>
     </footer>
   );
 };
