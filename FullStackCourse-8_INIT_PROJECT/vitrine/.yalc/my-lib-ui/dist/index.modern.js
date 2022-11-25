@@ -11,5 +11,13 @@ var InputComponent = function InputComponent(props) {
   })));
 };
 
-export { InputComponent as InputTextComponent };
+var SelectComponent = function SelectComponent(props) {
+  return React.createElement("div", {
+    className: "my-lib-ui-form-field"
+  }, React.createElement("select", Object.assign({
+    className: "my-lib-ui-select"
+  }, props), props.children));
+};
+
+export { InputComponent as InputTextComponent, SelectComponent };
 //# sourceMappingURL=index.modern.js.map
