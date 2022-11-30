@@ -1,3 +1,4 @@
+
 const FooterComponent: React.FC = () => {
   return (
     <footer>
