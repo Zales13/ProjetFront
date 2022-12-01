@@ -13,7 +13,6 @@ const Home: NextPage = () => {
       <InputTextComponent label="Prénom" placeholder="Votre prénom"/>
       <InputTextComponent label="E-mail" placeholder="Votre e-mail" />
       <InputTextComponent label="Numéro de téléphone" placeholder="Numéro"/>
-      
       <main></main>
       <FooterComponent />
     </div>
