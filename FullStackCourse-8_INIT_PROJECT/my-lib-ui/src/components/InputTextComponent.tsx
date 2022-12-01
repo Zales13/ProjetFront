@@ -1,4 +1,6 @@
+import { type } from "os";
 import React from "react";
+
 
 type Props = React.DetailedHTMLProps<
   React.InputHTMLAttributes<HTMLInputElement>,
@@ -6,12 +8,9 @@ type Props = React.DetailedHTMLProps<
 > & { label: string };
 
 const InputComponent: React.FC<Props> = (props) => {
-  const { label } = props;
+  const { label, type } = props;
   return (
-    <div className="my-lib-ui-form-field">
-      <label className="my-lib-ui-label">{label}</label>
-      <input {...props} className="my-lib-ui-input" />
-    </div>
+    <div className="input_div"> <label htmlFor="">{label} </label> <input type={type} className="input" /></div>
   );
 };
 

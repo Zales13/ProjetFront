@@ -3,14 +3,16 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 var React = _interopDefault(require('react'));
 
 var InputComponent = function InputComponent(props) {
-  var label = props.label;
+  var label = props.label,
+      type = props.type;
   return React.createElement("div", {
-    className: "my-lib-ui-form-field"
-  }, React.createElement("label", {
-    className: "my-lib-ui-label"
-  }, label), React.createElement("input", Object.assign({}, props, {
-    className: "my-lib-ui-input"
-  })));
+    className: "input_div"
+  }, " ", React.createElement("label", {
+    htmlFor: ""
+  }, label, " "), " ", React.createElement("input", {
+    type: type,
+    className: "input"
+  }));
 };
 
 var SelectComponent = function SelectComponent(props) {

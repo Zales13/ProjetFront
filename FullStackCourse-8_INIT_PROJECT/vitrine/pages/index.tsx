@@ -16,11 +16,10 @@ const Home: NextPage = () => {
 
     <HeaderComponent></HeaderComponent>
     <div className={styles.background}></div>
-      
-      <InputTextComponent label="Nom" placeholder="Votre nom" />
-      <InputTextComponent label="Prénom" placeholder="Votre prénom" />
-      <InputTextComponent label="E-mail" placeholder="Votre e-mail" />
-      <InputTextComponent label="Numéro de téléphone" placeholder="Numéro" />
+      <InputTextComponent label="Nom" type={"text"} />
+      <InputTextComponent label="Prénom" type={"text"} />
+      <InputTextComponent label="E-mail" type={"email"} />
+      <InputTextComponent label="Numéro de téléphone" type={"tel"} />
       <div className={styles.inscription}> <ButtonComponent onClick = {()=>{alert("bonjour")}}> Demander mon inscription </ButtonComponent>  </div>
       <main></main>
       <FooterComponent />
