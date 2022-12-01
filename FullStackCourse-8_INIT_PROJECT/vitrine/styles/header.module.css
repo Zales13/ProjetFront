@@ -19,10 +19,7 @@
 
 }
 
-.inscription{
-    width: 343px;
-    margin-left: auto;
-}
+
 
 .form{
     width: 795.92px;
@@ -31,6 +28,8 @@
     row-gap: 15px;
     display: grid;
     grid-template-columns: 50% 50%; 
+    
+
     
 }
 
@@ -53,11 +52,12 @@
     border-bottom: 1px solid #C00000;
 }
 
-.titreform{
+.radio{
     margin: auto;
     width: 795.92px;
     font-family: sans-serif;
     padding: 25px;
+    
 }
 
 
@@ -71,8 +71,24 @@ width: 795.92px;
 
 }
 
-
+.checkbox{
+    text-align: center;
+    padding-right: 25%;
     
+ 
+}
 
+.dropdown{
+    background: #F9F9F9;
+    height: 50px;
+    border: 0;
+}
+
+
+
+.inscription{
+    width: 343px;
+    margin-left: auto;
+}
 
 

@@ -23,21 +23,27 @@ const Home: NextPage = () => {
     
 
       </div>
-      <div className={styles.titreform}> 
+      <div className={styles.radio}> 
         <h1 className={styles.titre}> INSCRIPTION </h1>
         <h3> Je suis :</h3>
         <input name="offside" type="radio"></input> <label htmlFor="une entreprise"> Une entreprise</label>
         <input name="offside" type="radio"></input> <label htmlFor="un particulier"> Un particulier</label>
-  
-      </div>
+        </div>
+
       <div className={styles.form}>
-        
+      
       <InputTextComponent label="Nom" type={"text"} />
       <InputTextComponent label="Prénom" type={"text"} />
       <InputTextComponent label="E-mail" type={"email"} />
       <InputTextComponent label="Numéro de téléphone" type={"tel"} />
+      <select className={styles.dropdown} name="Nationalités" id="nationalités"> Nationalités </select>
+      
       </div>
-
+      <div className={styles.checkbox}>
+      <input type="checkbox" name="permis" id="permis"></input><label htmlFor="permis"> J'atteste que je possède un permis de conduire valable</label>
+      </div>
+      
+      
       <div className={styles.inscription}> <ButtonComponent onClick = {()=>{alert("bonjour")}}> Demander mon inscription </ButtonComponent>  </div>
       
       <FooterComponent></FooterComponent>
