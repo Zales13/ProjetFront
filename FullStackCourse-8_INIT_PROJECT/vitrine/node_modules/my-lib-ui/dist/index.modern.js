@@ -19,5 +19,19 @@ var SelectComponent = function SelectComponent(props) {
   }, props), props.children));
 };
 
-export { InputComponent as InputTextComponent, SelectComponent };
+var ButtonComponent = function ButtonComponent(props) {
+  var onClick = props.onClick,
+      children = props.children;
+
+  var handelonClick = function handelonClick(e) {
+    if (onClick) onClick(e);
+  };
+
+  return React.createElement("button", {
+    className: "buttoncomponent",
+    onClick: handelonClick
+  }, " ", children, " ");
+};
+
+export { ButtonComponent, InputComponent as InputTextComponent, SelectComponent };
 //# sourceMappingURL=index.modern.js.map

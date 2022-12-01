@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: rgb(0, 0, 0/ 13%) 0.7px 0.7px 22px 0px;
+    padding-right: 10px;
 }
 
 .background{
@@ -14,3 +15,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.inscription{
+    width: 343px;
+    margin-left: auto;
+}
+
