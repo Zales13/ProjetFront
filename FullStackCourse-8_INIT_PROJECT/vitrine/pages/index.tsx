@@ -23,6 +23,13 @@ const Home: NextPage = () => {
     
 
       </div>
+      <div className={styles.titreform}> 
+        <h1 className={styles.titre}> INSCRIPTION </h1>
+        <h3> Je suis :</h3>
+        <input name="offside" type="radio"></input> <label htmlFor="une entreprise"> Une entreprise</label>
+        <input name="offside" type="radio"></input> <label htmlFor="un particulier"> Un particulier</label>
+  
+      </div>
       <div className={styles.form}>
         
       <InputTextComponent label="Nom" type={"text"} />
