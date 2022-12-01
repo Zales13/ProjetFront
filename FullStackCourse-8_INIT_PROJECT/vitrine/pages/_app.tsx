@@ -1,6 +1,5 @@
 import "../styles/globals.css";
 import "my-lib-ui/dist/index.css";
-import "../styles/header.css";
 
 
 import type { AppProps } from "next/app";
