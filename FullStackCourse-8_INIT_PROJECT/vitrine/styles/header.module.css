@@ -1,0 +1,16 @@
+.headercss{
+
+    height: 72px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgb(0, 0, 0/ 13%) 0.7px 0.7px 22px 0px;
+}
+
+.background{
+    background-image: url("../images/image2.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
