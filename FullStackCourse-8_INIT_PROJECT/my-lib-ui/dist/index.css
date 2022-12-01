@@ -27,4 +27,8 @@
   font-family: sans-serif;
 }
 
+.active {
+  border-bottom: 2px solid #000000;
+}
+
 /*# sourceMappingURL=index.css.map */

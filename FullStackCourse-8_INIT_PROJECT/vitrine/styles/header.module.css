@@ -14,6 +14,9 @@
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: flex-end;
+
 }
 
 .inscription{
@@ -21,6 +24,37 @@
     margin-left: auto;
 }
 
+.form{
+    width: 795.92px;
+    margin: auto;
+    column-gap: 10px;
+    row-gap: 15px;
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    
+}
+
+.zonetexte{
+    background-color: white;
+    width: 795.92px;
+    height: 110px;
+    padding: 0 25px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 16px;
+   
+    
+
+    
+}
+
+.carretexte{
+    height: inherit;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid #C00000;
+}
 
 
 

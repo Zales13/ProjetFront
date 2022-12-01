@@ -24,7 +24,8 @@
     "yalc:build": "npm run sass:build && npm run build &&  yalc publish --private",
     "sass:build": "sass src/index.scss dist/index.css",
     "sass:watch": "sass -w src",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "peerDependencies": {
     "react": "^16.0.0"
@@ -36,5 +37,5 @@
     "sass": "^1.54.9",
     "yarn": "^1.22.19"
   },
-  "yalcSig": "80b383cc701515682d0cdad7601aa0fd"
+  "yalcSig": "dd1e80f0ea456d5e7ae93ce19836c7c9"
 }

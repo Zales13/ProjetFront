@@ -1,15 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 var InputComponent = function InputComponent(props) {
   var label = props.label,
-      type = props.type;
+      type = props.type,
+      onChange = props.onChange;
+
+  var _useState = useState(false),
+      active = _useState[0],
+      setActive = _useState[1];
+
   return React.createElement("div", {
-    className: "input_div"
-  }, " ", React.createElement("label", {
+    className: active ? "input_div active" : "input_div",
+    onClick: function onClick() {
+      return setActive(true);
+    },
+    onMouseLeave: function onMouseLeave() {
+      return setActive(false);
+    }
+  }, React.createElement("label", {
     htmlFor: ""
-  }, label, " "), " ", React.createElement("input", {
+  }, label, " "), React.createElement("input", {
     type: type,
-    className: "input"
+    className: "input",
+    onChange: onChange
   }));
 };
 

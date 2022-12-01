@@ -1,24 +1,38 @@
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var React = _interopDefault(require('react'));
+var React = require('react');
+var React__default = _interopDefault(React);
 
 var InputComponent = function InputComponent(props) {
   var label = props.label,
-      type = props.type;
-  return React.createElement("div", {
-    className: "input_div"
-  }, " ", React.createElement("label", {
+      type = props.type,
+      onChange = props.onChange;
+
+  var _useState = React.useState(false),
+      active = _useState[0],
+      setActive = _useState[1];
+
+  return React__default.createElement("div", {
+    className: active ? "input_div active" : "input_div",
+    onClick: function onClick() {
+      return setActive(true);
+    },
+    onMouseLeave: function onMouseLeave() {
+      return setActive(false);
+    }
+  }, React__default.createElement("label", {
     htmlFor: ""
-  }, label, " "), " ", React.createElement("input", {
+  }, label, " "), React__default.createElement("input", {
     type: type,
-    className: "input"
+    className: "input",
+    onChange: onChange
   }));
 };
 
 var SelectComponent = function SelectComponent(props) {
-  return React.createElement("div", {
+  return React__default.createElement("div", {
     className: "my-lib-ui-form-field"
-  }, React.createElement("select", Object.assign({
+  }, React__default.createElement("select", Object.assign({
     className: "my-lib-ui-select"
   }, props), props.children));
 };
@@ -31,7 +45,7 @@ var ButtonComponent = function ButtonComponent(props) {
     if (onClick) onClick(e);
   };
 
-  return React.createElement("button", {
+  return React__default.createElement("button", {
     className: "buttoncomponent",
     onClick: handelonClick
   }, " ", children, " ");
