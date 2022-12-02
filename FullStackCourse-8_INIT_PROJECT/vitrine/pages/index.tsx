@@ -38,7 +38,7 @@ const Home: NextPage = () => {
       <InputTextComponent label="E-mail" type={"email"} />
       <InputTextComponent label="Numéro de téléphone" type={"tel"} />
       
-     
+      
       <select className={styles.dropdown} name="natio" id="natio"> Nationalité </select>
       </div>
 
