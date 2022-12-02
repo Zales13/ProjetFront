@@ -6,6 +6,7 @@ import HeadComponent from "../components/HeadComponent";
 import HeaderComponent from "../components/HeaderComponent";
 import styles from "../styles/header.module.css";
 
+
 const Home: NextPage = () => {
   return (
     <>
@@ -34,7 +35,7 @@ const Home: NextPage = () => {
       <InputTextComponent label="Prénom" type={"text"} />
       <InputTextComponent label="E-mail" type={"email"} />
       <InputTextComponent label="Numéro de téléphone" type={"tel"} />
-      
+
       
       <select className={styles.dropdown} name="natio" id="natio"> Nationalité </select>
       </div>
@@ -44,10 +45,10 @@ const Home: NextPage = () => {
       <label htmlFor="permis"> J'atteste que je possède un permis de conduire valide</label>
       </div>
       
-      
       <div className={styles.inscription}> <ButtonComponent onClick = {()=>{alert("bonjour")}}> Demander mon inscription </ButtonComponent>  </div>
       
       <FooterComponent></FooterComponent>
+
     </>
   );
 };

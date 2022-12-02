@@ -147,3 +147,16 @@
     background: #FFFFFF;
     
 }
+
+.retour{
+    position: absolute;
+    width: 64px;
+    height: 20px;
+    left: 552px;
+    top: 160px;
+    font-family: 'sans-serif';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
