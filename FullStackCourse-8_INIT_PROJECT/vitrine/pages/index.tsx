@@ -36,10 +36,11 @@ const Home: NextPage = () => {
       <InputTextComponent label="Prénom" type={"text"} />
       <InputTextComponent label="E-mail" type={"email"} />
       <InputTextComponent label="Numéro de téléphone" type={"tel"} />
+      
       <select className={styles.dropdown} name="Nationalités" id="nationalités"> Nationalités </select>
       
       </div>
-      
+
       <div className={styles.checkbox}>
       <input type="checkbox" name="permis" id="permis"></input>
       <label htmlFor="permis"> J'atteste que je possède un permis de conduire valable</label>
