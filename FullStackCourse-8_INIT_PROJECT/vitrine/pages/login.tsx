@@ -11,6 +11,8 @@ const Login: NextPage = () => {
   const router = useRouter();
   return (
     <div>
+        
+      
       <HeadComponent/>
       <HeaderComponent></HeaderComponent>
 
@@ -18,13 +20,13 @@ const Login: NextPage = () => {
       <Link href="/">Retour</Link> 
       </div>
 
-
-      <div className={styles.connexion}>
+      
+      
+      <div className={styles.connexion}> 
       <h1 className={styles.titre}> CONNEXION </h1>
-        
       <InputTextComponent label="Identifiant" type={"text"}/>
       <InputTextComponent label="Mot de passe" type={"password"} />
-      <ButtonComponent> Connexion</ButtonComponent>
+      <div className={styles.btnconnexion}><ButtonComponent > Connexion</ButtonComponent> </div>
       
       </div>
       
