@@ -137,3 +137,13 @@
     height: 144px;
     background-color: black;
 }
+
+.connexion{
+    position: absolute;
+    width: 358px;
+    height: 317px;
+    left: 543px;
+    top: 196px;
+    background: #FFFFFF;
+    
+}

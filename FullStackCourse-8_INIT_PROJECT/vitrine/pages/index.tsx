@@ -6,9 +6,6 @@ import HeadComponent from "../components/HeadComponent";
 import HeaderComponent from "../components/HeaderComponent";
 import styles from "../styles/header.module.css";
 
-
-
-
 const Home: NextPage = () => {
   return (
     <>
