@@ -58,22 +58,23 @@
     font-family: sans-serif;
     padding: 25px;
     
+    
 }
 
 
 .titre{
 
-font-family: sans-serif;
-font-size: 21px;
-color: #C00000;
-margin: auto;
-width: 795.92px;
+    font-family: sans-serif;
+    font-size: 21px;
+    color: #C00000;
+    margin: auto;
+    width: 795.92px;
 
 }
 
 .checkbox{
     text-align: center;
-    padding-right: 25%;
+    padding-right: 26%;
     padding-top: 2%;
     
  

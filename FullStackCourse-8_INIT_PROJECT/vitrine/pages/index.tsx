@@ -25,8 +25,9 @@ const Home: NextPage = () => {
       </div>
       <div className={styles.radio}> 
         <h1 className={styles.titre}> INSCRIPTION </h1>
-        <h3> Je suis :</h3>
-        <input name="offside" type="radio"></input> <label htmlFor="une entreprise"> Une entreprise</label>
+        <h4> Je suis :</h4>
+        <input name="offside" type="radio"></input>
+         <label htmlFor="une entreprise"> Une entreprise</label>
         <input name="offside" type="radio"></input> <label htmlFor="un particulier"> Un particulier</label>
         </div>
 
@@ -36,9 +37,9 @@ const Home: NextPage = () => {
       <InputTextComponent label="Prénom" type={"text"} />
       <InputTextComponent label="E-mail" type={"email"} />
       <InputTextComponent label="Numéro de téléphone" type={"tel"} />
+      
 
       <select className={styles.dropdown} name="Nationalités" id="nationalités"> Nationalités </select>
-      
       </div>
 
       <div className={styles.checkbox}>
