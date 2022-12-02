@@ -74,6 +74,7 @@ width: 795.92px;
 .checkbox{
     text-align: center;
     padding-right: 25%;
+    padding-top: 2%;
     
  
 }
@@ -99,7 +100,7 @@ width: 795.92px;
     position: absolute;
     width: 343px;
     height: 44px;
-    left: 770px;
+    left: 840px;
     top: 960px;
 }
 
