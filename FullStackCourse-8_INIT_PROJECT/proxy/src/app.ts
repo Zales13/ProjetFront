@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get("/api", (_, res) => {
-  res.send("Hello API");
+  res.send("API is running");
 });
 
 app.get("/api/.user", (_, res) => {
